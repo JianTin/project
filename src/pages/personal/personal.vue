@@ -4,9 +4,10 @@
     <div class="personal-top">
       <!-- 通知 -->
       <div class="content-top">
-        <router-link to="/personal/inform">
+        <!-- <router-link to="/personal/inform">
           <span class="iconfont icon-lingdang"></span>
-        </router-link>
+        </router-link> -->
+        <span class="iconfont icon-lingdang" @click="$router.push('/personal/inform')"></span>
       </div>
       <!-- 用户信息 -->
       <div class="userMsg">
@@ -31,7 +32,7 @@
           </div>
           <i> &gt; </i>
         </li>
-        <li class="content-list">
+        <li class="content-list" @click="$router.push('/personal/integral')">
           <div>
             <p class="black">0</p>
             <p>我的积分</p>
