@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <router-view/>
-    <Footer/>
+    <router-view />
+    <Footer v-show="$router.currentRoute.meta.isShowFooter" />
   </div>
 </template>
 
@@ -9,9 +9,14 @@
 import Footer from '@/components/footer/footer'
 export default {
   name: 'App',
-  components: {Footer}
+  components: { Footer }
+  // async mounted  () {
+  //   this.$store.dispatch('actionGetMemberRights')
+  // }
 }
 </script>
 
-<style>
+<style lang='stylus'>
+#app
+  height 100%
 </style>
