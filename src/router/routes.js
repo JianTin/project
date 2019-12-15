@@ -1,8 +1,8 @@
-import Home from '@/pages/home/home'
-import Books from '@/pages/books/books'
-import Member from '@/pages/member/member'
-import Personal from '@/pages/personal/personal'
-import Login from '@/pages/login/login'
+import Home from '../pages/home/home'
+import Books from '../pages/books/books'
+import Member from '../pages/member/member'
+import Personal from '../pages/personal/personal'
+import Login from '../pages/login/login'
 // 我的页面中的二级组件
 import Inform from '../pages/personal/personals/inform.vue'
 import Integral from '../pages/personal/personals/integral.vue'
@@ -14,26 +14,41 @@ import Collect from '../pages/personal/personals/collect.vue'
 import Note from '../pages/personal/personals/note.vue'
 import Order from '../pages/personal/personals/order.vue'
 import Setting from '../pages/personal/personals/setting.vue'
+import FirstTime from '../pages/login/FirstTime.vue'
+import Special from '../pages/home/special.vue'
+import SpecialDetail from '../pages/home/specialDetail.vue'
 export default [
   {
     path: '/home',
-    component: Home
+    component: Home,
+    meta: { isShowFooter: true },
+    children: [
+      {
+        path: '/home/special',
+        component: Special,
+        children: [
+          {
+            path: '/home/special/:id',
+            component: SpecialDetail
+          }
+        ]
+      }
+    ]
   },
   {
     path: '/books',
-    component: Books
+    component: Books,
+    meta: { isShowFooter: true }
   },
   {
     path: '/member',
-    component: Member
+    component: Member,
+    meta: { isShowFooter: true }
   },
-  /* {
-    path: '/inform',
-    component: Inform
-  }, */
   {
     path: '/personal',
     component: Personal,
+    meta: { isShowFooter: true },
     children: [
       {
         path: '/personal/inform',
@@ -79,7 +94,14 @@ export default [
   },
   {
     path: '/login',
-    component: Login
+    component: Login,
+    meta: { isShowFooter: false },
+    children: [
+      {
+        path: '/login/firsttime',
+        component: FirstTime
+      }
+    ]
   },
   {
     path: '/',

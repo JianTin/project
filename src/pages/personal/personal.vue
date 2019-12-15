@@ -10,10 +10,10 @@
         <span class="iconfont icon-lingdang" @click="$router.push('/personal/inform')"></span>
       </div>
       <!-- 用户信息 -->
-      <div class="userMsg">
+      <div class="userMsg" @click="$router.push('/login/firsttime')">
         <!-- 用户名 -->
         <div class="user">
-          <p class="bigFont">游客用户0987</p>
+          <p class="bigFont">{{user._id?user.name:'请登录'}}</p>
           <p class="smallImg">
             <img src="./images/02.png" alt="">
           </p>
@@ -43,37 +43,37 @@
     </div>
     <!-- 我的下半部分 -->
     <ul class="personal-bottom">
-      <li class="personal-list">
+      <li class="personal-list" @click="$router.push('/personal/inform')">
         <span class="list-left iconfont icon-qiaquan"></span>
         <span class="list-content">我的卡券</span>
         <i class="list-right"> &gt; </i>
       </li>
-      <li class="personal-list">
+      <li class="personal-list" @click="$router.push('/personal/note')">
         <span class="list-left iconfont icon-shenhebijijishibenxiezi"></span>
         <span class="list-content">我的笔记</span>
         <i class="list-right"> &gt; </i>
       </li>
-      <li class="personal-list">
+      <li class="personal-list" @click="$router.push('/personal/collect')">
         <span class="list-left iconfont icon-xingxing"></span>
         <span class="list-content">我的收藏</span>
         <i class="list-right"> &gt; </i>
       </li>
-      <li class="personal-list">
+      <li class="personal-list" @click="$router.push('/personal/order')">
         <span class="list-left iconfont icon-bao"></span>
         <span class="list-content">我的订单</span>
         <i class="list-right"> &gt; </i>
       </li>
-      <li class="personal-list">
+      <li class="personal-list" @click="$router.push('/personal/consultingfeedback')">
         <span class="list-left iconfont icon-wenhao"></span>
         <span class="list-content">咨询反馈</span>
         <i class="list-right"> &gt; </i>
       </li>
-      <li class="personal-list">
+      <li class="personal-list" @click="$router.push('/personal/about')">
         <span class="list-left iconfont icon-guanyuwomen"></span>
         <span class="list-content">关于我们</span>
         <i class="list-right"> &gt; </i>
       </li>
-      <li class="personal-list">
+      <li class="personal-list" @click="$router.push('/personal/setting')">
         <span class="list-left iconfont icon-shezhi"></span>
         <span class="list-content">设置</span>
         <i class="list-right"> &gt; </i>
@@ -89,7 +89,17 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
+  computed: {
+    ...mapState({
+      user: state => state.user.user
+    })
+  },
+  mounted () {
+    // this.$store.dispatch('AutoLogin', this.$store.state.user)
+    console.log(this.$store.state.user)
+  }
 }
 </script>
 

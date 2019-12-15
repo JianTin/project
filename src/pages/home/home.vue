@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div style="width:100%;height:100%">
+    <router-view></router-view>
   </div>
 </template>
 
@@ -8,6 +9,4 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-
-</style>
+<style lang="stylus" scoped></style>
