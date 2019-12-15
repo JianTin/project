@@ -6,10 +6,19 @@ import router from './router'
 import 'minireset.css'
 Vue.config.productionTip = false
 
-/* eslint-disable no-new */
+
+import Router from 'vue-router'
+
+const originalPush = Router.prototype.push
+Router.prototype.push = function push(location) {
+  return originalPush.call(this, location).catch(err => err)
+}
+
 new Vue({
   el: '#app',
   router,
-  components: { App },
+  components: {
+    App
+  },
   template: '<App/>'
 })

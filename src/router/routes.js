@@ -3,10 +3,14 @@ import Books from '@/pages/books/books'
 import Member from '@/pages/member/member'
 import Personal from '@/pages/personal/personal'
 import Login from '@/pages/login/login'
-export default [
-  {
+import Magazine from '@/pages/home/magazine/magazine'
+export default [{
     path: '/home',
-    component: Home
+    component: Home,
+    children: [{
+      path: '/home/magazine',
+      component: Magazine
+    }, ]
   },
   {
     path: '/books',
@@ -24,8 +28,9 @@ export default [
     path: '/login',
     component: Login
   },
+
   {
     path: '/',
-    redirect: '/home'
+    redirect: '/home',
   }
 ]

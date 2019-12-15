@@ -1,23 +1,25 @@
 <template>
   <div>
-      <ul id="footer" ref='list'>
-        <li class="active" @click="goTo('/home',$event)">
-          <div class="iconfont  icon-home"></div>
-          <p>首页</p>
-        </li>
-        <li  @click="goTo('/member',$event)">
-          <div class="iconfont  icon-VIP"></div>
-          <p>会员</p>
-        </li>
-        <li @click="goTo('/books',$event)">
-          <div class="iconfont  icon-shujia"></div>
-          <p>书架</p>
-        </li>
-        <li @click="goTo('/personal',$event)" >
-          <div class="iconfont  icon-wodedangxuan-copy-copy"></div>
-          <p>我的</p>
-        </li>
-      </ul>
+    <ul id="footer"
+        ref='list'>
+      <li class="active"
+          @click="goTo('/home',$event)">
+        <div class="iconfont  icon-home"></div>
+        <p>首页</p>
+      </li>
+      <li @click="goTo('/member',$event)">
+        <div class="iconfont  icon-VIP"></div>
+        <p>会员</p>
+      </li>
+      <li @click="goTo('/books',$event)">
+        <div class="iconfont  icon-shujia"></div>
+        <p>书架</p>
+      </li>
+      <li @click="goTo('/personal',$event)">
+        <div class="iconfont  icon-wodedangxuan-copy-copy"></div>
+        <p>我的</p>
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -60,13 +62,14 @@ export default {
   width 100%
   border 1px solid #eeee
   display flex
+  background-color #fff
   li
     width 25%
     height 100%
     display flex
-    flex-direction  column
+    flex-direction column
     justify-content center
-    align-items  center
+    align-items center
     font-size 14px
     color #ccc
     &.active
