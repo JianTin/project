@@ -5,6 +5,8 @@ import mutations from './mutations'
 import actions from './actions'
 import getters from './getters'
 import member from './modules/member'
+import course from './modules/course'
+import reads from './modules/reads'
 Vue.use(Vuex)
 
 // eslint-disable-next-line new-cap
@@ -14,6 +16,8 @@ export default new Vuex.Store({
   actions,
   getters,
   modules: {
-    member
+    member,
+    course,
+    reads
   }
 })

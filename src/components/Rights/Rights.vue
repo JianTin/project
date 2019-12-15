@@ -2,12 +2,11 @@
   <div id="outer">
     <p id="title">会员权益</p>
     <ul>
-      <li v-for="(yearRights,index) in yearOrMonth" :key='index'
-         @click.stop="goTo"
-      >
+      <li v-for="(yearRights,index) in yearOrMonth"
+          :key='index'
+          @click.stop="goTo(index)">
         <img :src="yearRights.iconUrl"
-             alt="年度电子杂志"
-             >
+             alt="年度电子杂志">
         <p>{{yearRights.title}}</p>
       </li>
     </ul>
@@ -15,7 +14,7 @@
 </template>
 
 <script>
-import {mapState} from 'vuex'
+import { mapState } from 'vuex'
 import { Search } from 'vant'
 export default {
   props: {
@@ -29,27 +28,27 @@ export default {
     }),
     // 根据 true 和 false ，显示对应的权益
     yearOrMonth () {
-      const {level, year, month} = this
+      const { level, year, month } = this
       // console.log(level)
       return level ? year : month
     }
   },
   methods: {
-    goTo () {
-      console.dir(this.$router.replace)
-      this.$router.replace('/member/test')
+    goTo (index) {
+      this.$router.push(
+        { path: '/member/memberRights', query: { index, lever: this.level } }
+      )
     }
   }
 }
 </script>
 
 <style lang="stylus" scoped>
+@import '../../comm/maxi.styl'
 #outer
   margin-top 50px
 #title
-  font-weight 600
-  font-size 17px
-  margin-left 30px
+  member-font()
 ul
   width 100%
   box-sizing border-box
@@ -62,8 +61,10 @@ ul
     width 150px
     height 150px
     margin 5px
+    margin-bottom 10px
     p
+      margin-top 10px
       text-align center
       font-size 13px
-      color #ccc
+      color #040
 </style>
