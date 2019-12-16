@@ -193,7 +193,7 @@ export default {
         background linear-gradient(90deg, #ffe0b2, #bcaaa4)
 .swiper-container
   width 100%
-  height 80%
+  height 87.5%
   background #eeee
   .swiper-wrapper
     margin-top 50px
@@ -238,7 +238,10 @@ export default {
         font-size 6px
   .swiper-slide-active, .swiper-slide-duplicate-active
     transform scaleX(1.3) scaleY(1)
+.swiper-pagination
+  margin-bottom 40px
 /deep/ .bullet
+  margin-bottom 50px
   width 22px
   height 8px
   margin 0 8px

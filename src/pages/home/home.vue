@@ -1,5 +1,5 @@
 <template>
-  <div class="total-body">
+  <div class="container">
     <header class="header">
       <div class="logo"><img src="./img/logo.png"
              alt=""></div>
@@ -16,8 +16,8 @@
         <!-- 轮播图 -->
         <div class="swiper">
           <div class="swiper-container banner">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"
+            <div class="swiper-wrapper banner-body">
+              <div class="swiper-slide banner-Item"
                    v-for="(banner,index) in bannerList"
                    :key="index">
                 <h1 class="swiper-title">{{banner.title}}</h1>
@@ -181,12 +181,17 @@ export default {
     // 实例化Swiper
     this.$nextTick(() => {
       this._initHomeswiper()
-      new BScroll('.total-conter', {
-        click: true
-      })
-      new BScroll('.shopItem', {
+
+      this.shopScroll = new BScroll('.shopItem', {
         scrollX: true
       })
+      if (!this.scroll) {
+        this.scroll = new BScroll('.total-conter', {
+          click: true
+        })
+      } else {
+        this.scroll.refresh()
+      }
     })
   },
   methods: {
@@ -203,7 +208,7 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
-.total-body
+.container
   width 100%
   height 100%
   background-color #ccc
@@ -259,13 +264,13 @@ export default {
       height 550px
       margin-top 20px
       margin-left 30px
-      .swiper-container
+      .banner
         width 100%
         height 100%
-        .swiper-wrapper
+        .banner-body
           width 100%
           height 100%
-          .swiper-slide
+          .banner-Item
             width 100%
             height 100%
             h1
