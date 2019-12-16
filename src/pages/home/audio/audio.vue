@@ -90,9 +90,15 @@ export default {
 
 <style lang="stylus" scoped>
 #outer
+  position absolute
+  left 0
+  top 0
   width 100%
   height 100%
+  background white
+  z-index 100
   header
+    z-index 100
     display flex
     flex-shrink 0
     height 70px

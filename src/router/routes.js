@@ -17,6 +17,8 @@ import Setting from '../pages/personal/personals/setting.vue'
 import FirstTime from '../pages/login/FirstTime.vue'
 import Special from '../pages/home/special.vue'
 import SpecialDetail from '../pages/home/specialDetail.vue'
+// 杂志轮播图
+import Magazine from '@/pages/home/magazine/magazine'
 // 会员权力详情
 const MemberRights = () => import('@/pages/member/memberRights/memberRights')
 // 音频
@@ -31,6 +33,10 @@ export default [
     component: Home,
     meta: {isShowFooter: true},
     children: [
+      {
+        path: '/home/magazine',
+        component: Magazine
+      },
       {
         path: '/home/entryCourse',
         component: EntryCourse
@@ -132,6 +138,7 @@ export default [
       }
     ]
   },
+
   {
     path: '/',
     redirect: '/home'
