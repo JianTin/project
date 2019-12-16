@@ -3,7 +3,7 @@ import { getLogin } from '../../api/index'
 const state = {
   user: {},
   _id: '',
-  collectionSyins: [],
+  collectionMagazine: [],
   collectionCourse: []
 }
 const mutations = {
@@ -20,7 +20,8 @@ const mutations = {
   },
   // 添加 杂志数据
   [addMagazine] (state, sync) {
-    state.collectionSyins.shift(sync)
+    console.log(sync)
+    state.collectionMagazine.shift(sync)
   }
 }
 const actions = {

@@ -1,5 +1,5 @@
 <template>
-  <div classs='outer'>
+  <div class='outer'>
     <header>
       <!--左边目录-->
       <div class="directory-left">
@@ -125,6 +125,11 @@ export default {
 <style lang="stylus" scoped>
 .outer
   height 100%
+  width 100%
+  position absolute
+  left 0
+  top 0
+  z-index 100
 .green
   color #218c74
 .orange
