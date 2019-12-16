@@ -21,7 +21,7 @@ const mutations = {
   // 添加 杂志数据
   [addMagazine] (state, sync) {
     console.log(sync)
-    state.collectionMagazine.shift(sync)
+    state.collectionMagazine.unshift(sync)
   }
 }
 const actions = {

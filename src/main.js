@@ -14,6 +14,7 @@ import 'vant/lib/index.css'
 import './mock/mock'
 Vue.config.productionTip = false
 
+console.log(router)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

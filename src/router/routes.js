@@ -16,6 +16,10 @@ import Setting from '../pages/personal/personals/setting.vue'
 import FirstTime from '../pages/login/FirstTime.vue'
 import Special from '../pages/home/special.vue'
 import SpecialDetail from '../pages/home/specialDetail.vue'
+// 红
+import University from '@/pages/home/University/University'
+import Text from '@/pages/home/text/text'
+import TextChildren from '@/pages/home/text/text_children/text_children.vue'
 // shop
 import Cultural from '@/pages/cultural/cultural'
 import Detail from '../pages/cultural/detail'
@@ -82,6 +86,21 @@ export default [{
       ]
     }
   ]
+},
+{
+  path: '/university',
+  name: 'University',
+  component: University
+},
+{
+  path: '/text',
+  name: 'Text',
+  component: Text
+},
+{
+  path: '/textChildren',
+  name: 'TextChildren',
+  component: TextChildren
 },
 {
   path: '/books',

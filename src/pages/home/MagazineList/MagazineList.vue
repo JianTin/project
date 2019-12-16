@@ -111,7 +111,7 @@ import BScroll from 'better-scroll'
 export default {
   mounted () {
     // 计算 滚动区域外城的 高度
-    this.$refs.outerScroll.style.height = screen.height - 80 - 80 + 'px'
+    this.$refs.outerScroll.style.height = screen.height - 80 + 'px'
     new BScroll('.outerScroll')
   },
   methods: {

@@ -64,6 +64,7 @@ export default {
   display flex
   background white
   z-index 1000
+
   li
     width 25%
     height 100%
@@ -77,5 +78,4 @@ export default {
       color black
     div
       font-size 16px
-
 </style>

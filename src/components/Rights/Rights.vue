@@ -7,6 +7,7 @@
           @click.stop="goTo(index)">
         <img :src="yearRights.iconUrl"
              alt="年度电子杂志">
+
         <p>{{yearRights.title}}</p>
       </li>
     </ul>
@@ -15,6 +16,7 @@
 
 <script>
 import { mapState } from 'vuex'
+
 import { Search } from 'vant'
 export default {
   props: {
@@ -29,7 +31,6 @@ export default {
     // 根据 true 和 false ，显示对应的权益
     yearOrMonth () {
       const { level, year, month } = this
-
       // console.log(level)
       return level ? year : month
     }
@@ -50,6 +51,7 @@ export default {
   margin-top 50px
 #title
   member-font()
+
 ul
   width 100%
   box-sizing border-box
@@ -68,4 +70,5 @@ ul
       text-align center
       font-size 13px
       color #040
+
 </style>

@@ -77,6 +77,7 @@
         <div class="bck"></div>
       </div>
     </div>
+
   </div>
 </template>
 
@@ -122,11 +123,13 @@ export default {
   mounted () {
     // eslint-disable-next-line no-new
     new Swiper('#member-swiper', {
+
       slidesPerView: 'auto', // 表示一个 slides 的宽度来设定数量。
       centeredSlides: true, // active slide会居中，而不是默认状态下的居左。
       spaceBetween: 30,
       pagination: {
         el: '#member-swiper-pagination',
+
         clickable: true,
         bulletClass: 'my-bullet', // 设置单个 分页器的样式
         bulletActiveClass: 'my-bullet-active' // 选中时的样式
@@ -205,16 +208,17 @@ header
   #member-swiper
     width 100%
     height 250px
+
     background #F3DEC8
     .swiper-slide
       text-align center
       font-size 18px
+
       /* Center slide text vertically */
       display flex
       justify-content center
       align-items center
       width 60%
-
       position relative
       &>div
         position absolute
@@ -225,7 +229,6 @@ header
           position absolute
           bottom 0
           left 0
-
   .swiper-pagination
     margin-top 20px
     display flex
@@ -293,5 +296,4 @@ header
       color #A9A9A9
 .bck
   height 50px
-
 </style>
