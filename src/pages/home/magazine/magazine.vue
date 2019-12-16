@@ -1,7 +1,8 @@
 <template>
-  <div class="total">
+  <div class="container">
     <header class="header">
-      <span class="iconfont icon-right-copy"></span>
+      <span class="iconfont icon-right-copy"
+            @click="($router.back())"></span>
       <DropdownMenu class="DropdownMenu">
         <DropdownItem v-model="value"
                       :options="option"
@@ -17,8 +18,9 @@
       </div>
     </div>
     <div class="swiper-container swiper2">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"
+      <div class="swiper-wrapper swiper2-Item"
+           ref='divList '>
+        <div class="swiper-slide swiper2-List"
              v-for="(magazine,index) in magazines"
              :key="index">
           <img :src="magazine.coverImg"
@@ -28,7 +30,12 @@
           <span>总期{{magazine.magazineNo}}</span>
         </div>
       </div>
-
+    </div>
+    <!-- 底部进入目录 -->
+    <div class="bottom">
+      <div class="bottom-item">
+        <p>进入目录</p>
+      </div>
     </div>
   </div>
 </template>
@@ -57,22 +64,21 @@ export default {
       ],
       magazines: [], //保存辣度数据
       months: [12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1],  //保存月数数据
-      index: 0
+      index: 0,
+      lefts: []
     }
   },
   mounted () {
     this.$nextTick(() => {
       this._initSwiper()
-
-      let MonthScroll = new BScroll('.month', {
+      this.MonthScroll = new BScroll('.month', {
         scrollX: true,
-        click: true
+        click: true,
       })
-
       this.magazines = datajs.data
-
+      const span = this.$refs.spanItem.children
+      span[0].classList.add('active')
     })
-
   },
   methods: {
     _initSwiper () {
@@ -91,9 +97,11 @@ export default {
             Array.prototype.slice.call(span).forEach((span, index) => {
               if (this.index === index) {
                 span.classList.add('active')
+                this.MonthScroll.scrollToElement(span, 300, true)
               } else {
                 span.classList.remove('active')
               }
+
             });
           },
         }
@@ -103,6 +111,7 @@ export default {
       this.index = index
       const span = this.$refs.spanItem.children
       Array.prototype.slice.call(span).forEach((span, index) => {
+
         if (this.index === index) {
           span.classList.add('active')
         } else {
@@ -112,12 +121,11 @@ export default {
       //点击移动到当前到index
       this.magazineSwiper.slideTo(this.index, 500, false);//切换到第一个slide，速度为1秒
     },
-
   },
 }
 </script>
-<style lang="stylus" rel="stylesheet/stylus">
-.total
+<style lang="stylus" rel="stylesheet/stylus" scoped>
+.container
   position absolute
   left 0
   top 0
@@ -146,10 +154,10 @@ export default {
         color #ccc
       .active
         color #000
-  .swiper-container
+  .swiper2
     width 100%
     height 100%
-    .swiper-slide
+    .swiper2-List
       text-align center
       font-size 18px
       background #fff
@@ -169,4 +177,20 @@ export default {
         font-size 12px
     .swiper-slide-active, .swiper-slide-duplicate-active
       transform scale(1)
+  .bottom
+    width 100%
+    background-color #424242
+    position absolute
+    top 1150px
+    z-index 99
+    height 100px
+    .bottom-item
+      width 100%
+      height 100px
+      line-height 100px
+      text-align center
+      p
+        color #ffe57f
 </style>
+
+
