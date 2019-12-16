@@ -2,7 +2,8 @@
   <div id="outer">
     <header>
       <span class="iconfont  icon-right-copy"
-            @click="$router.back()"></span>
+           @click="$router.back()"
+           ></span>
       <div id="tabs"
            ref='tabs'>
         <p class="active"
@@ -78,6 +79,9 @@ export default {
       })
       node.classList.add('active')
       this.swiper.slideTo(index, 300)
+    },
+    audioGoback () {
+      this.$router.back()
     }
   },
   computed: {

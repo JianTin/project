@@ -1,7 +1,7 @@
 <template>
   <div class="total">
     <header class="header">
-      <span class="iconfont icon-right-copy"></span>
+      <span class="iconfont icon-right-copy magazine-goBack" @click="$router.back()"></span>
       <DropdownMenu class="DropdownMenu">
         <DropdownItem v-model="value"
                       :options="option"
@@ -35,7 +35,7 @@
 <script>
 import datajs from '../../../mock/magazine/data.json'
 import Swiper from 'swiper'
-import { DropdownMenu, DropdownItem } from 'vant';
+import { DropdownMenu, DropdownItem } from 'vant'
 import BScroll from 'better-scroll'
 export default {
   name: 'Magazine',
@@ -53,10 +53,10 @@ export default {
         { text: '2017', value: 2 },
         { text: '2016', value: 3 },
         { text: '2015', value: 4 },
-        { text: '2014', value: 5 },
+        { text: '2014', value: 5 }
       ],
-      magazines: [], //保存辣度数据
-      months: [12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1],  //保存月数数据
+      magazines: [], // 保存辣度数据
+      months: [12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1], // 保存月数数据
       index: 0
     }
   },
@@ -64,15 +64,13 @@ export default {
     this.$nextTick(() => {
       this._initSwiper()
 
-      let MonthScroll = new BScroll('.month', {
+      new BScroll('.month', {
         scrollX: true,
         click: true
       })
 
       this.magazines = datajs.data
-
     })
-
   },
   methods: {
     _initSwiper () {
@@ -85,7 +83,6 @@ export default {
         observeParents: true,
         on: {
           slideChange: () => {
-            this.magazineSwiper.activeIndex
             this.index = this.magazineSwiper.activeIndex
             const span = this.$refs.spanItem.children
             Array.prototype.slice.call(span).forEach((span, index) => {
@@ -94,10 +91,10 @@ export default {
               } else {
                 span.classList.remove('active')
               }
-            });
-          },
+            })
+          }
         }
-      });
+      })
     },
     goMonths (index) {
       this.index = index
@@ -108,12 +105,15 @@ export default {
         } else {
           span.classList.remove('active')
         }
-      });
-      //点击移动到当前到index
-      this.magazineSwiper.slideTo(this.index, 500, false);//切换到第一个slide，速度为1秒
+      })
+      // 点击移动到当前到index
+      this.magazineSwiper.slideTo(this.index, 500, false)// 切换到第一个slide，速度为1秒
     },
-
-  },
+    magazineGoback () {
+      console.log('5')
+      this.$router.back()
+    }
+  }
 }
 </script>
 <style lang="stylus" rel="stylesheet/stylus">
