@@ -31,7 +31,7 @@
         </div>
         <!-- 导航条 -->
         <nav class="nav">
-          <div class="tab special">
+          <div class="tab special" @click="$router.push('/home/special')">
             <span class="iconfont icon-yanjing1"></span>
             <p>专题</p>
           </div>
@@ -44,7 +44,7 @@
             <span class="iconfont icon-yinpin"></span>
             <p>音频</p>
           </div>
-          <div class="tab literature">
+          <div class="tab literature" @click="$router.push('/home/cultural')">
             <span class="iconfont icon-pencil"></span>
             <p>文创</p>
           </div>
@@ -74,7 +74,9 @@
           <!-- 商品列表 -->
           <div class="shop">
             <img src="./img/shop.jpg"
-                 alt="">
+                 alt=""
+                 @click="$router.push('/home/cultural')"
+                 >
             <div class="shopBody">
               <div class="shopItem">
                 <div class="shopList">

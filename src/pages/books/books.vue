@@ -13,7 +13,9 @@
         <div class="swiper-slide">
           <bookTab :text='swiperTab[0]' />
           <div class="back">
-            <Magazine />
+            <Magazine v-for="(magazine,index) in collectionMagazine"
+                      :key="index"
+                      :magazine='magazine' />
           </div>
         </div>
         <div class="swiper-slide">
@@ -90,7 +92,8 @@ export default {
   },
   computed: {
     ...mapState({
-      collectionCourse: state => state.user.collectionCourse
+      collectionCourse: state => state.user.collectionCourse,
+      collectionMagazine: state => state.user.collectionMagazine
     })
   },
   beforeUpdate () {

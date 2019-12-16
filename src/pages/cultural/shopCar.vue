@@ -127,6 +127,10 @@ export default {
   width 100%
   background-color #eee
   .header
+    position fixed
+    top: 0
+    left  0
+    z-index 100
     width 100%
     height 90px
     background-color #fff
@@ -143,8 +147,10 @@ export default {
     .manage
       margin-right 30px
   .shopList-wrapper
+    position relative
     width 100%
     height 1065px
+    z-index 80
     .shopItem
       width 100%
       height 200px
@@ -184,6 +190,7 @@ export default {
   line-height 90px
   display flex
   font-size 12px
+  z-index 150
   .checkAll
     width 35%
     padding-left 30px

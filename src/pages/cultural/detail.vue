@@ -16,7 +16,7 @@
     <div class="detail-wrapper"
          ref="detailWrapper">
       <div class="detail-content">
-        <img :src="detail.imageUrl"
+          <img :src="detail.imageUrl"
              alt=""
              ref="imgHeight">
         <div class="message">
@@ -24,7 +24,7 @@
             <span class="price">￥{{detail.shoppPrice}}</span>
             <span class="memberPrice">会员￥{{detail.memberPrice}}</span>
           </div>
-          <div class="openMember">
+          <div class="openMember" @click="$router.replace('/member')">
             <img src="./images/member.jpg"
                  alt="">
           </div>
@@ -224,8 +224,8 @@ export default {
     overflow hidden
     color #000
     position fixed
-    z-index 50
-    background-color transparent
+    z-index 200
+    background-color white
     width 100%
     line-height 90px
     text-align center
@@ -261,6 +261,13 @@ export default {
   .detail-wrapper
     height 1245px
     margin-bottom 100px
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 150;
     .detail-content
       width 100%
       position absolute
@@ -342,6 +349,7 @@ export default {
     left 0
     background-color #fff
     display flex
+    z-index 150
     p
       height 100%
       width 100%
@@ -369,7 +377,7 @@ export default {
     position absolute
     left 0
     bottom 0
-    z-index 100
+    z-index 200
     width 100%
     height 700px
     padding 30px
@@ -441,7 +449,7 @@ export default {
     left 0
     width 100%
     height 100%
-    z-index 40
+    z-index 150
     backdrop-filter blur(10px)
     opacity 1
     background rgba(0, 0, 0, 0.3)

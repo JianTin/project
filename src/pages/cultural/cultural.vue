@@ -14,7 +14,9 @@
           animated
           title-active-color="#007fff"
           title-inactive-color="#999"
-          line-height="0px">
+          line-height="0px"
+          style="margin-top:54px"
+          >
       <Tab title="shop">
         <Shop />
       </Tab>
@@ -66,12 +68,20 @@ export default {
   top 0
   height 100%
   background white
+  z-index 120
   .header
     height 54px
     line-height 54px
     margin 20px auto
+    position fixed
+    top 0
+    left 0
+    background white
+    z-index 100
     display flex
+    align-items center
     width 100%
+    height 54px
     span
       font-size 20px
       &.icon

@@ -148,7 +148,7 @@ export default {
     text-align center
     line-height 100px
     position fixed
-    bottom 100px
+    bottom 180px
     right 30px
     background-color #ffffff
     z-index 30
