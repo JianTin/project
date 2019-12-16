@@ -10,7 +10,6 @@ axios.interceptors.request.use((config) => {
 })
 
 axios.interceptors.response.use((response) => {
-  console.log(response)
   return response.data
 }, (err) => {
   return {code: 0, msg: err}

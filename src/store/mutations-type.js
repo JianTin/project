@@ -8,7 +8,7 @@ export const savephone = 'savephone'
 // 添加 课程
 export const addCourse = 'addCourse'
 // 添加 杂志
-export const addSync = 'addSync'
+export const addMagazine = 'addMagazine'
 // shop
 export const RECEIVE_GOODS = 'receive_goods'
 export const ADD_GOOD_COUNT = 'add_good_count'

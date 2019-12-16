@@ -1,4 +1,4 @@
-import { savephone, addCourse, addSync } from '../mutations-type'
+import { savephone, addCourse, addMagazine } from '../mutations-type'
 import { getLogin } from '../../api/index'
 const state = {
   user: {},
@@ -19,7 +19,7 @@ const mutations = {
     state.collectionCourse.unshift(course)
   },
   // 添加 杂志数据
-  [addSync] (state, sync) {
+  [addMagazine] (state, sync) {
     state.collectionSyins.shift(sync)
   }
 }
