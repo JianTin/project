@@ -1,8 +1,9 @@
 <template>
   <div id="outer">
     <header>
-      <span class="iconfont  icon-right-copy"
-            @click="$router.back()"></span>
+        <span class="iconfont  icon-right-copy"
+        @click="$router.back()"
+            ></span>
       <p>会员权益</p>
     </header>
     <!--tab切换-->
@@ -126,6 +127,9 @@ export default {
       this.$refs.activeBottom.style.left = nodeName.offsetLeft + 9 + 'px'
       this.scroll.scrollToElement(nodeName.children[0], 300, true)
       this.detailsswiper.slideToLoop(index, 1000, true)
+    },
+    goBack () {
+      this.$router.back()
     }
   }
 
@@ -193,7 +197,7 @@ export default {
         background linear-gradient(90deg, #ffe0b2, #bcaaa4)
 .swiper-container
   width 100%
-  height 80%
+  height 86.5%
   background #eeee
   .swiper-wrapper
     margin-top 50px

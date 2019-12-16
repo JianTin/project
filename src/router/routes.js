@@ -76,7 +76,7 @@ export default [
       {
         path: '/member/memberRights',
         component: MemberRights,
-        meta: {isShowFooter: true}
+        meta: {isShowFooter: false}
       }
     ]
   },
