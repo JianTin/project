@@ -26,7 +26,7 @@ export const getLogin = (name, pwd) => ajax({
 })
 
 // 创建用户
-export const getUser = (name, pwd) => ajax({
+export const createUser = (name, pwd) => ajax({
   method: 'GET',
   url: '/list/createUser',
   params: {

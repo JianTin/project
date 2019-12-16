@@ -3,7 +3,8 @@
     <header>
       <!--左边目录-->
       <div class="directory-left">
-        <span class="iconfont icon-right-copy go-back"></span>
+        <span class="iconfont icon-right-copy go-back"
+              @click="goTo"></span>
         <!--可点击的目录-->
         <p class="title-directory">
           <span>目录</span>
@@ -112,6 +113,11 @@ export default {
     // 计算 滚动区域外城的 高度
     this.$refs.outerScroll.style.height = screen.height - 80 - 80 + 'px'
     new BScroll('.outerScroll')
+  },
+  methods: {
+    goTo () {
+      this.$router.back()
+    }
   }
 }
 </script>

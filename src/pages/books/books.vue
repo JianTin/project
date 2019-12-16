@@ -24,6 +24,9 @@
         <div class="swiper-slide">
           <bookTab :text='swiperTab[2]' />
           <div class="back">
+            <Course v-for="(course,index) in collectionCourse"
+                    :key="index"
+                    :course='course' />
           </div>
         </div>
       </div>
@@ -42,6 +45,7 @@ import bookTab from '../../components/bookTab/bookTab'
 import Magazine from '../../components/Magazine/Magazine'
 // 引入课程
 import Course from '../../components/Course/course'
+import { mapState } from 'vuex'
 export default {
   components: { bookTab, Magazine, Course },
   data () {
@@ -83,6 +87,14 @@ export default {
       // 滚动
       this.bookSwiper.slideTo(index, 300)
     }
+  },
+  computed: {
+    ...mapState({
+      collectionCourse: state => state.user.collectionCourse
+    })
+  },
+  beforeUpdate () {
+    console.log(this.collectionCourse)
   }
 }
 </script>

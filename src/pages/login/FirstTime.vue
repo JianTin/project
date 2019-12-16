@@ -1,20 +1,31 @@
 <template>
   <div id="outer">
-    <div class="xxx" @click="$router.back()">❌</div>
-    <h1>欢迎回来<img src="./images/xinzhoukan-logo.png" alt=""></h1>
+    <div class="xxx"
+         @click="$router.back()">❌</div>
+    <h1>欢迎回来<img src="./images/xinzhoukan-logo.png"
+           alt=""></h1>
     <form>
-      <input type="phone" name="phone" placeholder="请输入手机号" v-model="phone">
-      <input type="password" name="pwd" placeholder="请输入密码" v-model="pwd">
+      <input type="phone"
+             name="phone"
+             placeholder="请输入手机号"
+             v-model="phone">
+      <input type="password"
+             name="pwd"
+             placeholder="请输入密码"
+             v-model="pwd">
       <!-- <span class="iconfont icon-open-eye"></span> -->
       <div>忘记了?找回密码</div>
-      <i disabled class="forstTime-login" @click="login">登录</i>
+      <i disabled
+         class="forstTime-login"
+         @click="login">登录</i>
     </form>
     <div class="login-third">——————— 使用第三方账号登录 ———————</div>
-    <div class="login-wx"><img src="./images/wx-logo.png" alt=""></div>
+    <div class="login-wx"><img src="./images/wx-logo.png"
+           alt=""></div>
   </div>
 </template>
 <script>
-import {getUser} from '../../api'
+import { createUser } from '../../api'
 export default {
   data () {
     return {
@@ -24,11 +35,11 @@ export default {
   },
   methods: {
     async login () {
-      const {phone, pwd} = this
+      const { phone, pwd } = this
       // 保存用户信息到vuex
       // 创建用户请求
-      await getUser(phone, pwd)
-      this.$store.dispatch('gotoLogin', {phone, pwd})
+      await createUser(phone, pwd)
+      this.$store.dispatch('gotoLogin', { phone, pwd })
       // 登录请求
       // const result = await getLogin(phone, pwd)
       // 登录成功进行跳转

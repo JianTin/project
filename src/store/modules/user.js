@@ -1,17 +1,27 @@
-import { savephone } from '../mutations-type'
+import { savephone, addCourse, addSync } from '../mutations-type'
 import { getLogin } from '../../api/index'
 const state = {
-  user: {}
-  // id: localStorage.getItem('id_key')
+  user: {},
+  _id: '',
+  collectionSyins: [],
+  collectionCourse: []
 }
 const mutations = {
   // 保存用户信息
   [savephone] (state, user) {
     state.user = user
+    state._id = user._id
+    localStorage.setItem('_id', user._id)
+  },
+  // 添加 课程数据
+  [addCourse] (state, course) {
+    console.log(course)
+    state.collectionCourse.unshift(course)
+  },
+  // 添加 杂志数据
+  [addSync] (state, sync) {
+    state.collectionSyins.shift(sync)
   }
-  /* [saveId] (state, user) {
-    state.id = user._id
-  } */
 }
 const actions = {
   // 登录
@@ -21,30 +31,9 @@ const actions = {
     const result = await getLogin(phone, pwd)
     if (result.code === 0) {
       const user = result.data
-      // this.$store.dispatch('saveuser', user)
       commit(savephone, user)
-      // commit(saveId, user)
     }
   }
-  /* saveuser ({ commit }, user) {
-    // 取出id
-    // 保存到vuex中
-    commit(saveId, user._id)
-    // 保存到localStorage
-    localStorage.setItem('id_key', user._id)
-    // 保存用户信息
-    commit(savephone, user)
-  }, */
-  // 自动登录
-  /*   async AutoLogin ({ commit }, state) {
-      if (state.id) {
-        const result = await autoLogin(state.id)
-        console.log(result)
-        if (result.code === 0) {
-          commit(savephone, state.user)
-        }
-      }
-    } */
 }
 const getters = {}
 

@@ -1,5 +1,6 @@
 <template>
-  <div id="outer">
+  <div id="outer"
+       @click="goTo(course.courseIcon)">
     <div class="courseAvatar">
       <img :src="course.courseIcon"
            alt="">
@@ -21,9 +22,23 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
   props: {
     course: Object
+  },
+  methods: {
+    goTo (src) {
+      this.$router.push({ path: '/home/entryCourse', query: { imgSrc: src } })
+      if (this.id) {
+        this.$store.commit('addCourse', this.course)
+      }
+    }
+  },
+  computed: {
+    ...mapState({
+      id: state => state.user._id
+    })
   }
 }
 </script>
@@ -44,6 +59,7 @@ export default {
     flex-direction column
     justify-content space-between
     margin-left 20px
+    height 180px
     .describesTop
       .title
         color black

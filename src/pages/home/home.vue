@@ -2,6 +2,7 @@
   <div id="outer"
        style="height:100%,width:100%">
     <router-view />
+    <div @click="$router.push('/home/audio')">去audio</div>
   </div>
 </template>
 

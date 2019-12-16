@@ -23,12 +23,18 @@ const MemberRights = () => import('@/pages/member/memberRights/memberRights')
 const Audio = () => import('@/pages/home/audio/audio')
 // 杂志目录
 const MagazineList = () => import('@/pages/home/MagazineList/MagazineList')
+// 空 课程页面
+const EntryCourse = () => import('@/pages/home/emtryCourse/entryCourse')
 export default [
   {
     path: '/home',
     component: Home,
     meta: {isShowFooter: true},
     children: [
+      {
+        path: '/home/entryCourse',
+        component: EntryCourse
+      },
       {
         path: '/home/audio',
         component: Audio,

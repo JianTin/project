@@ -57,9 +57,12 @@ export default {
     // 等待子级渲染完毕 再进行 new Scroll
     this.$nextTick(() => {
       // eslint-disable-next-line no-new
-      this.scrollLeft = new BScroll('#swiper-scroll-left')
-      this.scrollRight = new BScroll('#swiper-scroll-right')
-      console.log(this.scrollRight)
+      this.scrollLeft = new BScroll('#swiper-scroll-left', {
+        click: true
+      })
+      this.scrollRight = new BScroll('#swiper-scroll-right', {
+        click: true
+      })
     })
   },
   updated () {
