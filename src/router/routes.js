@@ -20,6 +20,8 @@ import SpecialDetail from '../pages/home/specialDetail.vue'
 import Cultural from '@/pages/cultural/cultural'
 import Detail from '../pages/cultural/detail'
 import ShopCar from '../pages/cultural/shopCar'
+// homepag
+import HomePage from '@/pages/home/HomePag/HomePag'
 // 杂志轮播图
 import Magazine from '@/pages/home/magazine/magazine'
 // 会员权力详情
@@ -35,6 +37,10 @@ export default [{
   component: Home,
   meta: {isShowFooter: true},
   children: [
+    {
+      path: '/home/homepag',
+      component: HomePage
+    },
     {
       path: '/home/cultural',
       component: Cultural

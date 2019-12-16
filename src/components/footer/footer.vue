@@ -77,4 +77,5 @@ export default {
       color black
     div
       font-size 16px
+
 </style>

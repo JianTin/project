@@ -48,7 +48,7 @@
             <span class="iconfont icon-pencil"></span>
             <p>文创</p>
           </div>
-          <div class="tab psychology">
+          <div class="tab psychology" @click="$router.push('/home/homepag')">
             <span class="iconfont icon-xinlifudao"></span>
             <p>大学心里</p>
           </div>
@@ -143,6 +143,7 @@
     </div>
 
     <router-view></router-view>
+
   </div>
 
 </template>
@@ -208,6 +209,7 @@ export default {
     }
   }
 }
+
 </script>
 <style lang="stylus" scoped>
 .container
