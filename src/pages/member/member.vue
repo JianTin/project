@@ -214,6 +214,7 @@ header
       justify-content center
       align-items center
       width 60%
+
       position relative
       &>div
         position absolute
@@ -224,6 +225,7 @@ header
           position absolute
           bottom 0
           left 0
+
   .swiper-pagination
     margin-top 20px
     display flex
@@ -291,4 +293,5 @@ header
       color #A9A9A9
 .bck
   height 50px
+
 </style>

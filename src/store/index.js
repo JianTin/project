@@ -8,6 +8,7 @@ import member from './modules/member'
 import course from './modules/course'
 import reads from './modules/reads'
 import user from './modules/user'
+import shop from './modules/shop'
 Vue.use(Vuex)
 
 // eslint-disable-next-line new-cap
@@ -20,6 +21,7 @@ export default new Vuex.Store({
     member,
     course,
     reads,
-    user
+    user,
+    shop
   }
 })

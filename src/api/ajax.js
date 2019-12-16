@@ -6,13 +6,13 @@ axios.interceptors.request.use((config) => {
   if (method.toUpperCase() === 'POST' && data instanceof Object) {
     config.data = qs.stringify(data)
   }
-  return config
 })
 
 axios.interceptors.response.use((response) => {
+  console.log(response)
   return response.data
 }, (err) => {
-  return { code: 0, msg: err }
+  return {code: 0, msg: err}
 })
 
 export default axios

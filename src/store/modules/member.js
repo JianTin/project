@@ -31,8 +31,10 @@ const actions = {
   // 获取 会员的数据
   async actionGetMemberRights ({commit}) {
     const result = await getMemberRights()
+    console.log(result)
     if (result.code === 0) {
       // 返回真正的数据
+      console.log(result.data)
       commit(changMemberRights, result.data.data)
     }
   }

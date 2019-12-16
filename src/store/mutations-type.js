@@ -9,3 +9,7 @@ export const savephone = 'savephone'
 export const addCourse = 'addCourse'
 // 添加 杂志
 export const addSync = 'addSync'
+// shop
+export const RECEIVE_GOODS = 'receive_goods'
+export const ADD_GOOD_COUNT = 'add_good_count'
+export const REDUCE_CARGOODS = 'reduce_cargoods'

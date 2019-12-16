@@ -1,0 +1,40 @@
+{
+  "msg": "success",
+  "code": 200,
+  "data": {
+    "cName": "梵高·姜星月幸运罗盘项链 锆石纯银镀金锁骨链",
+    "cSynopsis": "梵高·姜星月幸运罗盘项链 锆石纯银镀金锁骨链",
+    "seriesId": -1,
+    "free": 0.0,
+    "abstractTitle": "<p><img src=\"http://lifeschool.oss-cn-shenzhen.aliyuncs.com/Matching/2019/50cd8a931e504f499accb5a4990d577d.jpg\" style=\"max-width:100%;\"><br></p>",
+    "headImageUrl": "http://lifeschool.oss-cn-shenzhen.aliyuncs.com/Matching/2019/21e9dae29d3e420090feb6f8ae045587.jpg",
+    "numberId": "8000001863203236",
+    "priceList": [{
+      "id": 53,
+      "obsoleteId": null,
+      "title": "主图款",
+      "shoppPrice": 288.0,
+      "memberPrice": 259.0,
+      "discountPrice": null,
+      "stockNum": 10,
+      "coverImage": "http://lifeschool.oss-cn-shenzhen.aliyuncs.com/Matching/2019/777b6710f1524586bac6de1c2ec4fa7d.jpg",
+      "pieceName": null,
+      "buyNumber": null,
+      "isDis": 0,
+      "single": 0.1,
+      "discountType": null,
+      "discountVal": null,
+      "markingType": null,
+      "markingTypeName": null,
+      "numberId": null
+    }],
+    "status": 2,
+    "isDis": 0,
+    "isLike": 0,
+    "discountType": null,
+    "markingType": null,
+    "markingTypeName": null,
+    "beginTime": null,
+    "endTime": null
+  }
+}

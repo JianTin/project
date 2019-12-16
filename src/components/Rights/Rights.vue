@@ -29,6 +29,7 @@ export default {
     // 根据 true 和 false ，显示对应的权益
     yearOrMonth () {
       const { level, year, month } = this
+
       // console.log(level)
       return level ? year : month
     }

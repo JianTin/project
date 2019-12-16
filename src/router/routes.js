@@ -16,6 +16,10 @@ import Setting from '../pages/personal/personals/setting.vue'
 import FirstTime from '../pages/login/FirstTime.vue'
 import Special from '../pages/home/special.vue'
 import SpecialDetail from '../pages/home/specialDetail.vue'
+// shop
+import Cultural from '@/pages/cultural/cultural'
+import Detail from '../pages/cultural/detail'
+import ShopCar from '../pages/cultural/shopCar'
 // 杂志轮播图
 import Magazine from '@/pages/home/magazine/magazine'
 // 会员权力详情
@@ -31,6 +35,18 @@ export default [{
   component: Home,
   meta: {isShowFooter: true},
   children: [
+    {
+      path: '/home/cultural',
+      component: Cultural
+    },
+    {
+      path: '/home/detail',
+      component: Detail
+    },
+    {
+      path: '/home/shopCar',
+      component: ShopCar
+    },
     {
       path: '/home/magazine',
       component: Magazine
@@ -135,5 +151,4 @@ export default [{
 {
   path: '/',
   redirect: '/home'
-}
-]
+}]

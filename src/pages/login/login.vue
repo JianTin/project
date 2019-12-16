@@ -15,10 +15,6 @@
 
 <script>
 export default {
-  /*  beforeRouteEnter (to, form, next) {
-    console.log(to)
-    console.log(form)
-  } */
 }
 </script>
 

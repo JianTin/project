@@ -139,6 +139,7 @@
         </div>
       </div>
     </div>
+
     <router-view></router-view>
   </div>
 
@@ -172,7 +173,6 @@ export default {
 
     this.moduleList.forEach((li, index) => {
       if (li.moduleType === 3) {
-        console.log(li.commodityRecommendList)
         const shop = li.commodityRecommendList
         this.shop = shop
       }
@@ -422,4 +422,3 @@ export default {
                 height 320px
                 margin-left 30px
 </style>
->>>>>>> YHF
