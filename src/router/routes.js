@@ -4,6 +4,7 @@ import Member from '@/pages/member/member'
 import Personal from '@/pages/personal/personal'
 import Login from '@/pages/login/login'
 import Magazine from '@/pages/home/magazine/magazine'
+import order from '@/pages/home/order'
 export default [{
     path: '/home',
     component: Home,
@@ -27,6 +28,10 @@ export default [{
   {
     path: '/login',
     component: Login
+  },
+  {
+    path: '/order',
+    component: order
   },
   {
     path: '/',
