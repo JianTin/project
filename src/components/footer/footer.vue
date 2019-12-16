@@ -60,6 +60,7 @@ export default {
   width 100%
   border 1px solid #eeee
   display flex
+  background white
   li
     width 25%
     height 100%

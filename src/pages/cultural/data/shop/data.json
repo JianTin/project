@@ -1,0 +1,259 @@
+{
+  "msg": "success",
+  "code": 200,
+  "data": {
+    "bannerList": [{
+      "id": 103,
+      "title": "《百年孤独》超轻三折晴雨伞",
+      "imageUrl": "http://lifeschool.oss-cn-shenzhen.aliyuncs.com/Matching/2019/9bbd1fc816434ceb87d39668080745dd.png",
+      "jumpUrl": null,
+      "type": 1,
+      "isJump": 1,
+      "jumpType": 2,
+      "jumpFlag": "wenchuang_shop_main",
+      "source": 5,
+      "sort": null,
+      "status": 1,
+      "createTime": 1558679865000,
+      "numberId": "8000001121013550",
+      "resourceType": 8,
+      "startTime": 1558679865000,
+      "expiredTime": 1574577465000,
+      "ifAdvertising": 0,
+      "ifView": 0,
+      "shoppPrice":109,
+      "memberPrice":98,
+      "cName":"《百年孤独》超轻三折晴雨伞"
+    }],
+    "moduleList": [
+      {
+      "moduleId": 30,
+      "moduleName": "限时特惠",
+      "property": 1,
+      "moduleType": 10,
+      "moduleKey": "limited_time_offer",
+      "moId": "0",
+      "commodityRecommendList": [{
+        "cName": "戴珍珠耳环的少女姜 油画手机壳 全包边浮雕工艺",
+        "imageUrl": "http://lifeschool.oss-cn-shenzhen.aliyuncs.com/Matching/2019/4ce76f686f284d25892c7d789c867c1a.jpg?x-oss-process=style/thumbnail",
+        "numberId": "8000000257573306",
+        "shoppPrice": 48.0,
+        "memberPrice": 39.0,
+        "discountPrice": 0.0,
+        "isDis": 0,
+        "failId": 0
+      }, {
+        "cName": "弗里达创意手机壳 全包边浮雕防滑防摔 送冰箱贴",
+        "imageUrl": "http://lifeschool.oss-cn-shenzhen.aliyuncs.com/Matching/2019/f71ff411d5264cc6b6c6f622cfb20e5f.jpg?x-oss-process=style/thumbnail",
+        "numberId": "8000001318925041",
+        "shoppPrice": 48.0,
+        "memberPrice": 39.0,
+        "discountPrice": 0.0,
+        "isDis": 0,
+        "failId": 0
+      }],
+      "empty": false
+    }, {
+      "moduleId": 31,
+      "moduleName": "新品首发",
+      "property": 1,
+      "moduleType": 11,
+      "moduleKey": "new_product_launch",
+      "moId": "0",
+      "commodityRecommendList": [{
+        "cName": "蝴蝶花园锆石磨砂金币项链 925纯银女硬币锁骨链",
+        "imageUrl": "http://lifeschool.oss-cn-shenzhen.aliyuncs.com/Matching/2019/baf840843d46481a8681bd551ade4597.jpg?x-oss-process=style/thumbnail",
+        "numberId": "8000002048903170",
+        "shoppPrice": 349.0,
+        "memberPrice": 314.0,
+        "discountPrice": 0.0,
+        "isDis": 0,
+        "failId": 60
+      }, {
+        "cName": "蝴蝶花园925银锆石戒指女简约优雅套戒三件套组合",
+        "imageUrl": "http://lifeschool.oss-cn-shenzhen.aliyuncs.com/Matching/2019/f71f70e544e343c991e57ee5e2218ab8.jpg?x-oss-process=style/thumbnail",
+        "numberId": "8000001069246042",
+        "shoppPrice": 369.0,
+        "memberPrice": 332.0,
+        "discountPrice": 0.0,
+        "isDis": 0,
+        "failId": 61
+      }, {
+        "cName": "莫奈致敬款 睡莲插画三折晴雨伞",
+        "imageUrl": "http://lifeschool.oss-cn-shenzhen.aliyuncs.com/Matching/2019/11eb8b55e6dd4a069e9c2f9dcc35eeb2.jpg?x-oss-process=style/thumbnail",
+        "numberId": "8000000375917068",
+        "shoppPrice": 109.0,
+        "memberPrice": 98.0,
+        "discountPrice": 0.0,
+        "isDis": 0,
+        "failId": 15
+      }],
+      "empty": false
+    }, {
+      "moduleId": 32,
+      "moduleName": "畅销好物",
+      "property": 1,
+      "moduleType": 12,
+      "moduleKey": "best_seller",
+      "moId": "0",
+      "commodityRecommendList": [{
+        "cName": "莫奈睡莲插画印花真丝方巾 100%桑蚕丝丝巾女春夏",
+        "imageUrl": "http://lifeschool.oss-cn-shenzhen.aliyuncs.com/Matching/2019/3d1634a0f3e049d7ac5cb8c7839dbe69.jpg?x-oss-process=style/thumbnail",
+        "numberId": "8000001518916158",
+        "shoppPrice": 149.0,
+        "memberPrice": 134.0,
+        "discountPrice": 0.0,
+        "isDis": 0,
+        "failId": 58
+      }, {
+        "cName": "月亮与六便士书型18K镀金项链 925银文艺锁骨链女",
+        "imageUrl": "http://lifeschool.oss-cn-shenzhen.aliyuncs.com/Matching/2019/024a11a5e3bd400798446a913e26c4dd.jpg?x-oss-process=style/thumbnail",
+        "numberId": "8000000660237768",
+        "shoppPrice": 239.0,
+        "memberPrice": 215.0,
+        "discountPrice": 0.0,
+        "isDis": 0,
+        "failId": 59
+      }, {
+        "cName": "《百年孤独》插画刺绣帆布包",
+        "imageUrl": "http://lifeschool.oss-cn-shenzhen.aliyuncs.com/Matching/2019/6652daae94844662be794a462d281bba.jpg?x-oss-process=style/thumbnail",
+        "numberId": "8000001829813609",
+        "shoppPrice": 99.0,
+        "memberPrice": 89.0,
+        "discountPrice": 0.0,
+        "isDis": 0,
+        "failId": 7
+      }],
+      "empty": false
+    }, {
+      "moduleId": 61,
+      "moduleName": "文学家系列",
+      "moduleNameEnglish": "series of literati",
+      "property": 2,
+      "moduleType": 3,
+      "moduleKey": "wenchuang_commend",
+      "moId": "0",
+      "commodityRecommendList": [{
+        "cName": "“渡冬之书”新年围巾礼盒 羊绒羊毛围巾 珐琅胸针",
+        "imageUrl": "http://lifeschool.oss-cn-shenzhen.aliyuncs.com/Matching/2019/ab5e00c0d9624be69657003cd72b28ce.jpg?x-oss-process=style/thumbnail",
+        "numberId": "8000000026004887",
+        "shoppPrice": 298.0,
+        "memberPrice": 268.0,
+        "discountPrice": 0.0,
+        "isDis": 0,
+        "failId": 31
+      }, {
+        "cName": "《百年孤独》插画刺绣帆布包",
+        "imageUrl": "http://lifeschool.oss-cn-shenzhen.aliyuncs.com/Matching/2019/6652daae94844662be794a462d281bba.jpg?x-oss-process=style/thumbnail",
+        "numberId": "8000001829813609",
+        "shoppPrice": 99.0,
+        "memberPrice": 89.0,
+        "discountPrice": 0.0,
+        "isDis": 0,
+        "failId": 7
+      }, {
+        "cName": "《百年孤独》拼色真丝发带",
+        "imageUrl": "http://lifeschool.oss-cn-shenzhen.aliyuncs.com/Matching/2019/27d26d20fb5347ed85517af27e290caa.jpg?x-oss-process=style/thumbnail",
+        "numberId": "8000001419421159",
+        "shoppPrice": 99.0,
+        "memberPrice": 89.0,
+        "discountPrice": 0.0,
+        "isDis": 0,
+        "failId": 8
+      }, {
+        "cName": "《月亮与六便士》不对称浮雕金币珍珠耳环 18K镀金 锆石",
+        "imageUrl": "http://lifeschool.oss-cn-shenzhen.aliyuncs.com/Matching/2019/fcea39763dc045b4b259f48a46d3bb2c.jpg?x-oss-process=style/thumbnail",
+        "numberId": "8000000544603608",
+        "shoppPrice": 248.0,
+        "memberPrice": 223.0,
+        "discountPrice": 0.0,
+        "isDis": 0,
+        "failId": 10
+      }, {
+        "cName": "《月亮与六便士》书型18K金镀金项链",
+        "imageUrl": "http://lifeschool.oss-cn-shenzhen.aliyuncs.com/Matching/2019/192e92c689a049feb9c3dde9559e7b20.jpg?x-oss-process=style/thumbnail",
+        "numberId": "8000001588538929",
+        "shoppPrice": 219.0,
+        "memberPrice": 197.0,
+        "discountPrice": 0.0,
+        "isDis": 0,
+        "failId": 11
+      }, {
+        "cName": "“昨日之诗”香薰蜡烛礼盒180g 浪漫香氛礼品",
+        "imageUrl": "http://lifeschool.oss-cn-shenzhen.aliyuncs.com/Matching/2019/959216a9641c420ca2111f17f8f4a965.jpg?x-oss-process=style/thumbnail",
+        "numberId": "8000000490592364",
+        "shoppPrice": 159.0,
+        "memberPrice": 143.0,
+        "discountPrice": 0.0,
+        "isDis": 0,
+        "failId": 30
+      }],
+      "empty": false
+    }, {
+      "moduleId": 62,
+      "moduleName": "艺术家系列",
+      "moduleNameEnglish": "series of artist ",
+      "property": 2,
+      "moduleType": 3,
+      "moduleKey": "wenchuang_commend",
+      "moId": "0",
+      "commodityRecommendList": [{
+        "cName": "莫奈致敬款 睡莲插画购物袋 轻便折叠环保袋",
+        "imageUrl": "http://lifeschool.oss-cn-shenzhen.aliyuncs.com/Matching/2019/fc05de1b72c84c09a59a12534aadd5e2.jpg?x-oss-process=style/thumbnail",
+        "numberId": "8000001094155817",
+        "shoppPrice": 88.0,
+        "memberPrice": 79.0,
+        "discountPrice": 0.0,
+        "isDis": 0,
+        "failId": 14
+      }, {
+        "cName": "卢梭致敬款 进口疯马皮真皮手账礼盒 黄铜笔文具",
+        "imageUrl": "http://lifeschool.oss-cn-shenzhen.aliyuncs.com/Matching/2019/b5a75d54750645fa9ed2ef76b3c53667.jpg?x-oss-process=style/thumbnail",
+        "numberId": "8000000497071272",
+        "shoppPrice": 199.0,
+        "memberPrice": 179.0,
+        "discountPrice": 0.0,
+        "isDis": 0,
+        "failId": 25
+      }],
+      "empty": false
+    }, {
+      "moduleId": 63,
+      "moduleName": "新周猫系列",
+      "moduleNameEnglish": "series of Ginger ",
+      "property": 2,
+      "moduleType": 3,
+      "moduleKey": "wenchuang_commend",
+      "moId": "0",
+      "commodityRecommendList": [{
+        "cName": "戴珍珠耳环的少女姜 油画手机壳 全包边浮雕工艺",
+        "imageUrl": "http://lifeschool.oss-cn-shenzhen.aliyuncs.com/Matching/2019/4ce76f686f284d25892c7d789c867c1a.jpg?x-oss-process=style/thumbnail",
+        "numberId": "8000000257573306",
+        "shoppPrice": 48.0,
+        "memberPrice": 39.0,
+        "discountPrice": 0.0,
+        "isDis": 0,
+        "failId": 12
+      }, {
+        "cName": "新周猫 《姜戈今天不加班》2019年台历",
+        "imageUrl": "http://lifeschool.oss-cn-shenzhen.aliyuncs.com/Matching/2019/7e8faace500149c7bb085e3609a6fcf6.jpg?x-oss-process=style/thumbnail",
+        "numberId": "8000000051825809",
+        "shoppPrice": 39.0,
+        "memberPrice": 35.0,
+        "discountPrice": 0.0,
+        "isDis": 0,
+        "failId": 26
+      }, {
+        "cName": "新年特别版 招财猫幸运项链 14K镀金 绿锆石",
+        "imageUrl": "http://lifeschool.oss-cn-shenzhen.aliyuncs.com/Matching/2019/9f9bab6dd4ed42cdb2ff1d78d980666b.jpg?x-oss-process=style/thumbnail",
+        "numberId": "8000002048650255",
+        "shoppPrice": 288.0,
+        "memberPrice": 259.0,
+        "discountPrice": 0.0,
+        "isDis": 0,
+        "failId": 27
+      }],
+      "empty": false
+    }]
+  }
+}
