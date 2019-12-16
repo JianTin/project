@@ -24,7 +24,8 @@
              v-for="(magazine,index) in magazines"
              :key="index">
           <img :src="magazine.coverImg"
-               alt="">
+               alt=""
+               @click="goTo(magazine)">
           <p>{{magazine.title}}</p>
           <span>{{magazine.magazineId}}</span>
           <span>总期{{magazine.magazineNo}}</span>
@@ -42,8 +43,9 @@
 <script>
 import datajs from '../../../mock/magazine/data.json'
 import Swiper from 'swiper'
-import { DropdownMenu, DropdownItem } from 'vant';
+import { DropdownMenu, DropdownItem } from 'vant'
 import BScroll from 'better-scroll'
+import { mapState } from 'vuex'
 export default {
   name: 'Magazine',
   components: {
@@ -60,10 +62,10 @@ export default {
         { text: '2017', value: 2 },
         { text: '2016', value: 3 },
         { text: '2015', value: 4 },
-        { text: '2014', value: 5 },
+        { text: '2014', value: 5 }
       ],
-      magazines: [], //保存辣度数据
-      months: [12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1],  //保存月数数据
+      magazines: [], // 保存辣度数据
+      months: [12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1], // 保存月数数据
       index: 0,
       lefts: []
     }
@@ -73,7 +75,7 @@ export default {
       this._initSwiper()
       this.MonthScroll = new BScroll('.month', {
         scrollX: true,
-        click: true,
+        click: true
       })
       this.magazines = datajs.data
       const span = this.$refs.spanItem.children
@@ -101,27 +103,36 @@ export default {
               } else {
                 span.classList.remove('active')
               }
-
-            });
-          },
+            })
+          }
         }
-      });
+      })
     },
     goMonths (index) {
       this.index = index
       const span = this.$refs.spanItem.children
       Array.prototype.slice.call(span).forEach((span, index) => {
-
         if (this.index === index) {
           span.classList.add('active')
         } else {
           span.classList.remove('active')
         }
-      });
-      //点击移动到当前到index
-      this.magazineSwiper.slideTo(this.index, 500, false);//切换到第一个slide，速度为1秒
+      })
+      // 点击移动到当前到index
+      this.magazineSwiper.slideTo(this.index, 500, false)// 切换到第一个slide，速度为1秒
     },
+    goTo (magazine) {
+      this.$router.push('/home/MagineList')
+      if (this._id) {
+        this.$store.commit('addMagazine', magazine)
+      }
+    }
   },
+  computed: {
+    ...mapState({
+      _id: state => state.user._id
+    })
+  }
 }
 </script>
 <style lang="stylus" rel="stylesheet/stylus" scoped>
@@ -192,5 +203,3 @@ export default {
       p
         color #ffe57f
 </style>
-
-
