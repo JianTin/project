@@ -1,18 +1,25 @@
 <template>
-  <div id="home">
-  <router-link to="/HomePage">
-    <div style="background-color: deeppink; width: 100%; height: 200px">
-      我就知道
-    </div>
-  </router-link>
-  <router-view/>
-  </div>
+  <section id="home">
+    <router-link to="/home/homepag">
+      <div style="background-color: deeppink; width: 100%; height: 200px">
+        我就知道
+      </div>
+    </router-link>
+
+    <router-link to="university">
+      <div style="background-color: #55a532; width: 100%;height:100px;margin-top: 10px">
+        大学心里
+      </div>
+    </router-link>
+
+
+
+  </section>
 </template>
 <script>
-  export default {}
+  export default {};
 </script>
 
-3i9k
 <style lang="stylus" scoped>
 
 </style>

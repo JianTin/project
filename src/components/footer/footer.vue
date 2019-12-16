@@ -53,24 +53,25 @@
 </script>
 
 <style lang="stylus" scoped>
-  #footer
-    position fixed
-    bottom 0
-    height 100px
-    width 100%
-    border 1px solid #eeee
+#footer
+  position fixed
+  bottom 0
+  height 100px
+  width 100%
+  border 1px solid #eeee
+  display flex
+  background white
+  li
+    width 25%
+    height 100%
     display flex
-    li
-      width 25%
-      height 100%
-      display flex
-      flex-direction column
-      justify-content center
-      align-items center
-      font-size 14px
-      color #ccc
-      &.active
-        color black
-      div
-        font-size 16px
+    flex-direction column
+    justify-content center
+    align-items center
+    font-size 14px
+    color #ccc
+    &.active
+      color black
+    div
+      font-size 16px
 </style>

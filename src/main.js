@@ -2,14 +2,25 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
+// 引入 路由对象
 import router from './router'
+// 引入 vuex
+import store from './store'
+// 去除默认样式
 import 'minireset.css'
+// 引入 vant的 css库
+import 'vant/lib/index.css'
+
+
+
 Vue.config.productionTip = false
 
+console.log(router)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
+  store
 })
