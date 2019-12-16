@@ -8,11 +8,11 @@
   <router-view/>
   </div>
 </template>
-
 <script>
   export default {}
 </script>
 
+3i9k
 <style lang="stylus" scoped>
 
 </style>
