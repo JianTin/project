@@ -1,13 +1,13 @@
 <template>
   <div class="outer"
        @click="goTo">
-    <img src="./image/575edd9ce2074852956e2f516d3eb410.jpg"
+    <img :src="magazine.coverImg"
          alt="">
     <div class="text">
-      <p class="title">中国辣度</p>
+      <p class="title">{{magazine.title}}</p>
       <p class="describes">
-        <span class="time">2019年11越</span>
-        <span>551期</span>
+        <span class="time">{{magazine.magazineId}}</span>
+        <span>{{magazine.magazineNo}}期</span>
       </p>
     </div>
   </div>
@@ -15,6 +15,9 @@
 
 <script>
 export default {
+  props: {
+    magazine: Object
+  },
   methods: {
     goTo () {
       this.$router.push('/home/MagineList')
