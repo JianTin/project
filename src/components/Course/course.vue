@@ -1,5 +1,5 @@
 <template>
-  <div id="outer"
+  <div class="courseOuter"
        @click="goTo(course.courseIcon)">
     <div class="courseAvatar">
       <img :src="course.courseIcon"
@@ -44,7 +44,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-#outer
+.courseOuter
   display flex
   padding 20px
   box-sizing border-box

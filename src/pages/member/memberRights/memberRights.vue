@@ -9,9 +9,6 @@
     <div class="tabs-outer">
       <div id="tabs"
            ref='list'>
-        <!-- <li v-for="(item,index) in mooth" :key="index">
-          {{}}
-        </li> -->
         <div v-for="(item,index) in month"
              :key="index"
              @click="goTo(index,$event)"
@@ -80,8 +77,11 @@ export default {
         },
         observer: true,
         on: {
+          // 当触发 轮播图切换时 ， 会触发事件
           slideChangeTransitionStart: () => {
+            // 获取元素
             let node = this.$refs.list.children[this.detailsswiper.activeIndex].children[0]
+            // 滚动到对应的元素
             this.scroll.scrollToElement(node, 300, true)
             this.goTo(this.detailsswiper.activeIndex, node)
           }
@@ -99,6 +99,8 @@ export default {
   },
   methods: {
     goTo (index, event) {
+      // 判断 传输的 标签 还是 event事件对象
+      // 最终返回的是标签
       let eventNode = event.nodeName === 'P' ? event : event.target
       // 去除所有 li的 target
       Array.from(this.$refs.list.children).forEach((item) => {
@@ -123,8 +125,11 @@ export default {
     // 初始化
     init (index) {
       let nodeName = this.$refs.list.children[index].children[0]
+      // tabs 底部滚动到对应位置
       this.$refs.activeBottom.style.left = nodeName.offsetLeft + 9 + 'px'
+      // 滚动到 指定的元素中间
       this.scroll.scrollToElement(nodeName.children[0], 300, true)
+      // 切换到对应的 index 轮播图
       this.detailsswiper.slideToLoop(index, 1000, true)
     }
   }

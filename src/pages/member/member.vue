@@ -144,6 +144,7 @@ export default {
         }
       }
     })
+    // 等到下次数据请求回来后进行更新
     this.$nextTick(() => {
       // eslint-disable-next-line no-new
       new BScroll('.scrollOuter', {
@@ -151,6 +152,7 @@ export default {
       })
       // 判断 请求的 活动数据 回来了么 长度 > 0  则表示回来了
       if (this.activities.length > 0) {
+        // 数据请求回来 渲染 下方的 swiper
         // eslint-disable-next-line no-new
         this.swiperActivitie = new Swiper('#swiper-activities', {
           loop: true,
@@ -169,6 +171,7 @@ export default {
   },
   // 下次 数据更新，如果 轮播图没渲染出来， 那么进行一个渲染
   beforeUpdate () {
+    // 判断有没有 这个 swiper 没有就渲染一个出来
     if (!this.swiperActivitie) {
       this.$nextTick(() => {
         this.swiperActivitie = new Swiper('#swiper-activities', {
@@ -208,12 +211,10 @@ header
   #member-swiper
     width 100%
     height 250px
-
     background #F3DEC8
     .swiper-slide
       text-align center
       font-size 18px
-
       /* Center slide text vertically */
       display flex
       justify-content center

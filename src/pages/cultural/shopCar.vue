@@ -1,4 +1,4 @@
-<template>
+﻿<template>
   <section class="shopCar">
     <div class="header">
       <span @click="$router.back()"
@@ -15,7 +15,7 @@
               v-for="(item,index) in cartgoods"
               :key="index">
             <Checkbox class="checkItem"
-                      :name="item.numberId"></Checkbox>
+                      :name="item"></Checkbox>
             <img :src="item.imageUrl"
                  alt="">
             <div class="shopMessage">
@@ -35,8 +35,7 @@
     <!-- 底部 -->
     <div class="footer">
       <Checkbox class="checkAll"
-                v-model="checkedAll"
-                @click="toggleAllSelect">全选</Checkbox>
+                v-model="checkedAll">全选</Checkbox>
       <div class="total">
         <div v-show="isManage">合计：<span>￥{{totalPrice}}</span></div>
       </div>
@@ -72,13 +71,19 @@ export default {
         }
       },
       set () {
-        this.$refs.checkboxGroup.toggleAll()
+        if (this.result === 0) {
+          this.$refs.checkboxGroup.toggleAll()
+        } else if (this.result.length === this.cartgoods.length) {
+          this.result = []
+        } else {
+          this.result = this.cartgoods
+        }
       }
     },
     // 总共价格
     totalPrice () {
       const currentGoods = this.cartgoods.filter((cartgood, index) => {
-        return this.result.find((result) => result === cartgood.numberId)
+        return this.result.find((result) => result.numberId === cartgood.numberId)
       })
       const price = currentGoods.reduce((pre, good) => pre + good.count * good.shoppPrice, 0)
       return price
@@ -88,10 +93,6 @@ export default {
   mounted () {
   },
   methods: {
-    // 点击全选按钮
-    toggleAllSelect () {
-      this.checkedAll = !this.checkedAll
-    },
     // 当商品数量发生改变时
     onChange (good) {
       const count = good.count
@@ -103,7 +104,7 @@ export default {
         console.log('立即购买')
       } else {
         const currentGoods = this.cartgoods.filter((cartgood, index) => {
-          const result = this.result.find((result) => result === cartgood.numberId)
+          const result = this.result.find((result) => result.numberId === cartgood.numberId)
           if (result) {
             return false
           } else {
@@ -111,6 +112,7 @@ export default {
           }
         })
         this.$store.dispatch('reduceCargoods', { cartgoods: currentGoods })
+        this.result = []
       }
     }
   }
@@ -128,8 +130,8 @@ export default {
   background-color #eee
   .header
     position fixed
-    top: 0
-    left  0
+    top 0
+    left 0
     z-index 100
     width 100%
     height 90px
@@ -151,6 +153,7 @@ export default {
     width 100%
     height 1065px
     z-index 80
+    background #f1f2f6
     .shopItem
       width 100%
       height 200px

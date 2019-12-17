@@ -1,4 +1,5 @@
 <template>
+
   <div class="container">
     <header class="header">
       <div class="logo"><img src="./img/logo.png"
@@ -31,7 +32,8 @@
         </div>
         <!-- 导航条 -->
         <nav class="nav">
-          <div class="tab special" @click="$router.push('/home/special')">
+          <div class="tab special"
+               @click="$router.push('/home/special')">
             <span class="iconfont icon-yanjing1"></span>
             <p>专题</p>
           </div>
@@ -40,15 +42,18 @@
             <span class="iconfont icon-zazhiqikan"></span>
             <p>杂志</p>
           </div>
-          <div class="tab music" @click="$router.push('/home/audio')">
+          <div class="tab music"
+               @click="$router.push('/home/audio')">
             <span class="iconfont icon-yinpin"></span>
             <p>音频</p>
           </div>
-          <div class="tab literature" @click="$router.push('/home/cultural')">
+          <div class="tab literature"
+               @click="$router.push('/home/cultural')">
             <span class="iconfont icon-pencil"></span>
             <p>文创</p>
           </div>
-          <div class="tab psychology" @click="$router.push('/home/homepag')">
+          <div class="tab psychology"
+               @click="$router.push('/University')">
             <span class="iconfont icon-xinlifudao"></span>
             <p>大学心里</p>
           </div>
@@ -75,8 +80,7 @@
           <div class="shop">
             <img src="./img/shop.jpg"
                  alt=""
-                 @click="$router.push('/home/cultural')"
-                 >
+                 @click="$router.push('/home/cultural')">
             <div class="shopBody">
               <div class="shopItem">
                 <div class="shopList">

@@ -97,7 +97,7 @@ export default {
     })
   },
   beforeUpdate () {
-    console.log(this.collectionCourse)
+    console.log(this.collectionMagazine)
   }
 }
 </script>

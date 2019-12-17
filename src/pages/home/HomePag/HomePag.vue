@@ -1,18 +1,21 @@
 <template>
   <section class="fouter">
-  <!--头部-->
-  <div class="header">
-    <svg @click="go" class="icond" aria-hidden="true">
-      <use xlink:href="#icon-right-copy
+    <!--头部-->
+    <div class="header">
+      <svg @click="go"
+           class="icond"
+           aria-hidden="true">
+        <use xlink:href="#icon-right-copy
 "></use>
-    </svg>
-    <svg class="icond" aria-hidden="true">
-      <use xlink:href="#icon-sangedian
+      </svg>
+      <svg class="icond"
+           aria-hidden="true">
+        <use xlink:href="#icon-sangedian
 "></use>
-    </svg>
-  </div>
+      </svg>
+    </div>
 
-  <!--中间文字部分-->
+    <!--中间文字部分-->
     <div class="center">
       <h2 class="center_header">
         不爱逛超市的人，谈不上热爱生活
@@ -24,7 +27,7 @@
         </p>
       </div>
       <p style="font-size: 16px;font-weight: 900; margin: 60px 0 40px 0;text-align: center">作业我做了一个梦，梦见你笑我就笑</p>
-      <p>  前几天半夜失眠刷朋友圈，刷到一条动态，是一个没什么交情的大学同学发的，内容是：我做人是不是真的很失败？
+      <p> 前几天半夜失眠刷朋友圈，刷到一条动态，是一个没什么交情的大学同学发的，内容是：我做人是不是真的很失败？
 
         紧接着往下翻几页，是她室友婚礼的照片。一个寝室六个人，另外四个女孩都去当了伴娘，除了她。
 
@@ -53,7 +56,7 @@
 
         列夫·托尔斯泰在《战争与和平》一书中，也写过类似的话”</p>
       <div>
-        <img  src="./image/01.jpg" >
+        <img src="./image/01.jpg">
 
         <p style="text-align: center; margin: 0 0 40px 0">“你若叫我留下，我便策马奔腾地向你飞拥抱”/0708万岁</p>
         <p>之前看过一期《爱情保卫战》印象特别深刻。
@@ -69,11 +72,11 @@
           搬家，从收拾东西到搬运再到整理全都一个人干，全都搬完了才告诉男朋友这件事......</p>
       </div>
       <div>
-        <img src="./image/02.jpg" >
+        <img src="./image/02.jpg">
         <p style="text-align: center; margin: 0 0 40px 0">“你若叫我留下，我便策马奔腾地向你飞拥抱”/0708万岁</p>
         <p>菲菲问她，为什么不找我陪你，为什么不来住我家？你把没把我当成菲菲问她，为什么不找我陪你，为什么不来住我家？你把没把我当成朋友？</p>
       </div>
-      <p>  仔细观察一下别人的相处模式不难发现，“什么事都替对方做了”和“什么事都自己一个人做”的感情，都很难不让其中一方心生怨怼。
+      <p> 仔细观察一下别人的相处模式不难发现，“什么事都替对方做了”和“什么事都自己一个人做”的感情，都很难不让其中一方心生怨怼。
 
         只有互相麻烦的感情，才更深厚。
 
@@ -99,7 +102,8 @@
       <p>但严格点说，这件事也不能全都怪她室友。
         说自己做人失败的姑娘叫小何，如果你去打听她，得到的答案肯定是差不多的：“小何啊，人挺好的，就是不太好接近。”</p>
       <div>
-        <img  src="./image/03.jpg" alt="" >
+        <img src="./image/03.jpg"
+             alt="">
         <p style="text-align: center; margin: 0 0 40px 0">“你若叫我留下，我便策马奔腾地向你飞拥抱”/0708万岁</p>
         <p>拿最经典的“对战金翅大鹏”这一情节来说，金翅大鹏来历不凡，扬言是如来佛祖的老娘舅。武功更是高深，两翅膀一拍，飞得比筋斗云还快，孙悟空跟他几次对战都吃了闷亏。
 
@@ -112,7 +116,7 @@
           如果孙悟空不懂求助他人，凡事都自己死扛到底，师徒四人可能早就折在半路。</p>
       </div>
       <div>
-        <img src="./image/04.jpg" >
+        <img src="./image/04.jpg">
         <p style="text-align: center; margin: 0 0 40px 0">“你若叫我留下，我便策马奔腾地向你飞拥抱”/0708万岁</p>
         <p>如果有一样东西自己不会做，那就去向会做的人请教；
 
@@ -133,12 +137,12 @@
 
           学会“麻烦”别人，也学会接受别人“麻烦”自己，我们将会得到一个不一样的生活。
         </p>
-<!--复制一次-->
+        <!--复制一次-->
 
       </div>
-<!--复制了一次-->
+      <!--复制了一次-->
       <p style="font-size: 16px;font-weight: 900; margin: 60px 0 40px 0;text-align: center">作业我做了一个梦，梦见你笑我就笑</p>
-      <p>  前几天半夜失眠刷朋友圈，刷到一条动态，是一个没什么交情的大学同学发的，内容是：我做人是不是真的很失败？
+      <p> 前几天半夜失眠刷朋友圈，刷到一条动态，是一个没什么交情的大学同学发的，内容是：我做人是不是真的很失败？
 
         紧接着往下翻几页，是她室友婚礼的照片。一个寝室六个人，另外四个女孩都去当了伴娘，除了她。
 
@@ -167,7 +171,7 @@
 
         列夫·托尔斯泰在《战争与和平》一书中，也写过类似的话”</p>
       <div>
-        <img  src="./image/15.jpg" >
+        <img src="./image/15.jpg">
 
         <p style="text-align: center; margin: 0 0 40px 0">“你若叫我留下，我便策马奔腾地向你飞拥抱”/0708万岁</p>
         <p>之前看过一期《爱情保卫战》印象特别深刻。
@@ -183,11 +187,11 @@
           搬家，从收拾东西到搬运再到整理全都一个人干，全都搬完了才告诉男朋友这件事......</p>
       </div>
       <div>
-        <img src="./image/20.jpg" >
+        <img src="./image/20.jpg">
         <p style="text-align: center; margin: 0 0 40px 0">“你若叫我留下，我便策马奔腾地向你飞拥抱”/0708万岁</p>
         <p>菲菲问她，为什么不找我陪你，为什么不来住我家？你把没把我当成菲菲问她，为什么不找我陪你，为什么不来住我家？你把没把我当成朋友？</p>
       </div>
-      <p>  仔细观察一下别人的相处模式不难发现，“什么事都替对方做了”和“什么事都自己一个人做”的感情，都很难不让其中一方心生怨怼。
+      <p> 仔细观察一下别人的相处模式不难发现，“什么事都替对方做了”和“什么事都自己一个人做”的感情，都很难不让其中一方心生怨怼。
 
         只有互相麻烦的感情，才更深厚。
 
@@ -213,7 +217,8 @@
       <p>但严格点说，这件事也不能全都怪她室友。
         说自己做人失败的姑娘叫小何，如果你去打听她，得到的答案肯定是差不多的：“小何啊，人挺好的，就是不太好接近。”</p>
       <div>
-        <img  src="./image/03.jpg" alt="" >
+        <img src="./image/03.jpg"
+             alt="">
         <p style="text-align: center; margin: 0 0 40px 0">“你若叫我留下，我便策马奔腾地向你飞拥抱”/0708万岁</p>
         <p>拿最经典的“对战金翅大鹏”这一情节来说，金翅大鹏来历不凡，扬言是如来佛祖的老娘舅。武功更是高深，两翅膀一拍，飞得比筋斗云还快，孙悟空跟他几次对战都吃了闷亏。
 
@@ -226,7 +231,7 @@
           如果孙悟空不懂求助他人，凡事都自己死扛到底，师徒四人可能早就折在半路。</p>
       </div>
       <div>
-        <img src="./image/20.jpg" >
+        <img src="./image/20.jpg">
         <p style="text-align: center; margin: 0 0 40px 0">“你若叫我留下，我便策马奔腾地向你飞拥抱”/0708万岁</p>
         <p>如果有一样东西自己不会做，那就去向会做的人请教；
 
@@ -251,7 +256,7 @@
 
       </div>
       <p style="font-size: 16px;font-weight: 900; margin: 60px 0 40px 0;text-align: center">作业我做了一个梦，梦见你笑我就笑</p>
-      <p>  前几天半夜失眠刷朋友圈，刷到一条动态，是一个没什么交情的大学同学发的，内容是：我做人是不是真的很失败？
+      <p> 前几天半夜失眠刷朋友圈，刷到一条动态，是一个没什么交情的大学同学发的，内容是：我做人是不是真的很失败？
 
         紧接着往下翻几页，是她室友婚礼的照片。一个寝室六个人，另外四个女孩都去当了伴娘，除了她。
 
@@ -280,7 +285,7 @@
 
         列夫·托尔斯泰在《战争与和平》一书中，也写过类似的话”</p>
       <div>
-        <img  src="./image/17.jpg" >
+        <img src="./image/17.jpg">
 
         <p style="text-align: center; margin: 0 0 40px 0">“你若叫我留下，我便策马奔腾地向你飞拥抱”/0708万岁</p>
         <p>之前看过一期《爱情保卫战》印象特别深刻。
@@ -296,11 +301,11 @@
           搬家，从收拾东西到搬运再到整理全都一个人干，全都搬完了才告诉男朋友这件事......</p>
       </div>
       <div>
-        <img src="./image/19.jpg" >
+        <img src="./image/19.jpg">
         <p style="text-align: center; margin: 0 0 40px 0">“你若叫我留下，我便策马奔腾地向你飞拥抱”/0708万岁</p>
         <p>菲菲问她，为什么不找我陪你，为什么不来住我家？你把没把我当成菲菲问她，为什么不找我陪你，为什么不来住我家？你把没把我当成朋友？</p>
       </div>
-      <p>  仔细观察一下别人的相处模式不难发现，“什么事都替对方做了”和“什么事都自己一个人做”的感情，都很难不让其中一方心生怨怼。
+      <p> 仔细观察一下别人的相处模式不难发现，“什么事都替对方做了”和“什么事都自己一个人做”的感情，都很难不让其中一方心生怨怼。
 
         只有互相麻烦的感情，才更深厚。
 
@@ -326,7 +331,8 @@
       <p>但严格点说，这件事也不能全都怪她室友。
         说自己做人失败的姑娘叫小何，如果你去打听她，得到的答案肯定是差不多的：“小何啊，人挺好的，就是不太好接近。”</p>
       <div>
-        <img  src="./image/18.jpg" alt="" >
+        <img src="./image/18.jpg"
+             alt="">
         <p style="text-align: center; margin: 0 0 40px 0">“你若叫我留下，我便策马奔腾地向你飞拥抱”/0708万岁</p>
         <p>拿最经典的“对战金翅大鹏”这一情节来说，金翅大鹏来历不凡，扬言是如来佛祖的老娘舅。武功更是高深，两翅膀一拍，飞得比筋斗云还快，孙悟空跟他几次对战都吃了闷亏。
 
@@ -339,7 +345,7 @@
           如果孙悟空不懂求助他人，凡事都自己死扛到底，师徒四人可能早就折在半路。</p>
       </div>
       <div>
-        <img src="./image/19.jpg" >
+        <img src="./image/19.jpg">
         <p style="text-align: center; margin: 0 0 40px 0">“你若叫我留下，我便策马奔腾地向你飞拥抱”/0708万岁</p>
         <p>如果有一样东西自己不会做，那就去向会做的人请教；
 
@@ -365,7 +371,7 @@
       </div>
 
       <p style="font-size: 16px;font-weight: 900; margin: 60px 0 40px 0;text-align: center">作业我做了一个梦，梦见你笑我就笑</p>
-      <p>  前几天半夜失眠刷朋友圈，刷到一条动态，是一个没什么交情的大学同学发的，内容是：我做人是不是真的很失败？
+      <p> 前几天半夜失眠刷朋友圈，刷到一条动态，是一个没什么交情的大学同学发的，内容是：我做人是不是真的很失败？
 
         紧接着往下翻几页，是她室友婚礼的照片。一个寝室六个人，另外四个女孩都去当了伴娘，除了她。
 
@@ -394,7 +400,7 @@
 
         列夫·托尔斯泰在《战争与和平》一书中，也写过类似的话”</p>
       <div>
-        <img  src="./image/18.jpg" >
+        <img src="./image/18.jpg">
 
         <p style="text-align: center; margin: 0 0 40px 0">“你若叫我留下，我便策马奔腾地向你飞拥抱”/0708万岁</p>
         <p>之前看过一期《爱情保卫战》印象特别深刻。
@@ -410,11 +416,11 @@
           搬家，从收拾东西到搬运再到整理全都一个人干，全都搬完了才告诉男朋友这件事......</p>
       </div>
       <div>
-        <img src="./image/17.jpg" >
+        <img src="./image/17.jpg">
         <p style="text-align: center; margin: 0 0 40px 0">“你若叫我留下，我便策马奔腾地向你飞拥抱”/0708万岁</p>
         <p>菲菲问她，为什么不找我陪你，为什么不来住我家？你把没把我当成菲菲问她，为什么不找我陪你，为什么不来住我家？你把没把我当成朋友？</p>
       </div>
-      <p>  仔细观察一下别人的相处模式不难发现，“什么事都替对方做了”和“什么事都自己一个人做”的感情，都很难不让其中一方心生怨怼。
+      <p> 仔细观察一下别人的相处模式不难发现，“什么事都替对方做了”和“什么事都自己一个人做”的感情，都很难不让其中一方心生怨怼。
 
         只有互相麻烦的感情，才更深厚。
 
@@ -440,7 +446,8 @@
       <p>但严格点说，这件事也不能全都怪她室友。
         说自己做人失败的姑娘叫小何，如果你去打听她，得到的答案肯定是差不多的：“小何啊，人挺好的，就是不太好接近。”</p>
       <div>
-        <img  src="./image/16.jpg" alt="" >
+        <img src="./image/16.jpg"
+             alt="">
         <p style="text-align: center; margin: 0 0 40px 0">“你若叫我留下，我便策马奔腾地向你飞拥抱”/0708万岁</p>
         <p>拿最经典的“对战金翅大鹏”这一情节来说，金翅大鹏来历不凡，扬言是如来佛祖的老娘舅。武功更是高深，两翅膀一拍，飞得比筋斗云还快，孙悟空跟他几次对战都吃了闷亏。
 
@@ -453,7 +460,7 @@
           如果孙悟空不懂求助他人，凡事都自己死扛到底，师徒四人可能早就折在半路。</p>
       </div>
       <div>
-        <img src="./image/12.jpg" >
+        <img src="./image/12.jpg">
         <p style="text-align: center; margin: 0 0 40px 0">“你若叫我留下，我便策马奔腾地向你飞拥抱”/0708万岁</p>
         <p>如果有一样东西自己不会做，那就去向会做的人请教；
 
@@ -477,35 +484,41 @@
         <!--复制一次-->
 
       </div>
-<!--评论区-->
-        <section class="face">
+      <!--评论区-->
+      <section class="face">
         <div class="face_dada">
-            <img style="width: 50px;height: 50px;border-radius: 50px;margin-top: 5px" src="./image/05.jpg">
-            <div class="face_data_da">
-              <div style="font-weight: 900;font-size: 14px">王中中<span style="margin-left: 20px;font-weight: 400">大人中</span></div>
-              <div>观察人类，偶尔也被人类观察</div>
-            </div>
+          <img style="width: 50px;height: 50px;border-radius: 50px;margin-top: 5px"
+               src="./image/05.jpg">
+          <div class="face_data_da">
+            <div style="font-weight: 900;font-size: 14px">王中中<span style="margin-left: 20px;font-weight: 400">大人中</span></div>
+            <div>观察人类，偶尔也被人类观察</div>
+          </div>
 
         </div>
         <div class="face_icon">
 
-          <div class="face_two" style="font-size: 14px;
+          <div class="face_two"
+               style="font-size: 14px;
           width: 80px;
           height: 30px;
           border: 1px solid #cdcdcd;
           text-align: center;
           ">
-          <svg style="width: 1em;height: 1em" class="Icon_we" aria-hidden="true">
+            <svg style="width: 1em;height: 1em"
+                 class="Icon_we"
+                 aria-hidden="true">
               <use xlink:href="#icon-zan
 "></use>
             </svg>
-          24</div>
+            24</div>
           <div class="face_two">
             <span>分享到：</span>
             <svg style="width: 80px;
           height: 30px;
           border: 1px solid #cdcdcd;
-          text-align: center;" class="Icon_we" aria-hidden="true">
+          text-align: center;"
+                 class="Icon_we"
+                 aria-hidden="true">
               <use xlink:href="#icon-weixin
 "></use>
             </svg>
@@ -513,7 +526,9 @@
           height: 30px;
           border: 1px solid #cdcdcd;
           text-align: center;
-          margin-left: 30px" class="Icon_we" aria-hidden="true">
+          margin-left: 30px"
+                 class="Icon_we"
+                 aria-hidden="true">
               <use xlink:href="#icon-pengyouquan
 "></use>
             </svg>
@@ -522,167 +537,168 @@
         </div>
         <div>
           <h2 style="font-size: 20px;font-weight: 600;margin: 30px 0">观点</h2>
-          <img src="./image/13.jpg" alt="">
+          <img src="./image/13.jpg"
+               alt="">
           <p style="text-align: center">暂时还没有人评论，来做第一条品论吧~</p>
         </div>
-        </section>
+      </section>
 
     </div>
 
-
     <!--最底部-->
     <div class="footer_me">
-      <svg class="icon" aria-hidden="true">
+      <svg class="icon"
+           aria-hidden="true">
         <use xlink:href="#icon-touxiang"></use>
       </svg>
-      <input class="input" type="text" placeholder="说说你的观点...">
-      <svg class="icon" aria-hidden="true">
+      <input class="input"
+             type="text"
+             placeholder="说说你的观点...">
+      <svg class="icon"
+           aria-hidden="true">
         <use xlink:href="#icon-zhuanfa"></use>
       </svg>
-      <svg class="icon" aria-hidden="true">
+      <svg class="icon"
+           aria-hidden="true">
         <use xlink:href="#icon-xingxing"></use>
       </svg>
-      <svg class="icon" aria-hidden="true">
+      <svg class="icon"
+           aria-hidden="true">
         <use xlink:href="#icon-sangedian
 "></use>
       </svg>
     </div>
-    
+
   </section>
-
-
-
 
 </template>
 
 <script>
-import iconfont from "../../../Iconfont/iconfont.js"
-import iconfont2 from "../../../iconfont2/iconfont.js"
+import iconfont from '../../../Iconfont/iconfont.js'
+import iconfont2 from '../../../iconfont2/iconfont.js'
 import { Popup } from 'vant'
 
 export default {
-  data() {
+  data () {
     return {
       show: false
     }
-    },
+  },
 
-  components:{
+  components: {
     iconfont,
     iconfont2,
     Popup
   },
   methods: {
-    go(){
-    this.$router.go(-1)
+    go () {
+      this.$router.go(-1)
     }
   },
-  showPopup() {
-    this.show = true;
+  showPopup () {
+    this.show = true
   }
 }
 </script>
 <style lang="stylus" scoped>
-  .fouter
-    font-size 12px
+.fouter
+  font-size 12px
+  width 100%
+  height 100%
+  position absolute
+  left 0
+  top 0
+  background white
+  z-index 100
+  /* 头部 */
+  .header
     width 100%
-    height 100%
-
-    /*头部*/
-    .header
-      width 100%
-      height 100px
+    height 100px
+    overflow hidden
+    position fixed
+    top 0
+    display flex
+    justify-content space-between
+    background-color #FFFFFF
+    .icond
+      width 2em
+      height 2em
+      vertical-align -0.15em
+      fill currentColor
       overflow hidden
-      position fixed
-      top 0
-      display flex
-      justify-content space-between
-      background-color #FFFFFF
-      .icond
-        width: 2em;
-        height: 2em;
-        vertical-align: -0.15em;
-        fill: currentColor;
-        overflow: hidden;
-        margin 1em 2em 0 2em
-
-        /*中间文字部分*/
-    .center
-      width 90%
-      margin 0 auto
-      margin-top 100px
-      margin-bottom 200px
-      .center_header
-        width 100%
-        margin-bottom 20px
-        font-size 16px
-        font-weight bolder
-      p
-        margin 30px 0
-        text-indent:2em
-      .yinying
-        width 100%
-        height 60px
-        line-height 60px
-        text-align center
-      .marst
-        margin 30px 0
-        font-size 16px
-        font-weight bold
-        text-align center
-
-/*点赞微信区*/
-    .face
+      margin 1em 2em 0 2em
+      /* 中间文字部分 */
+  .center
+    width 90%
+    margin 0 auto
+    margin-top 100px
+    margin-bottom 200px
+    .center_header
       width 100%
-      .face_dada
-        height 100px
-        display flex
-        justify-content space-around
-        background-color #cecece
-        .face_data_da
-          width 70%
-          height 100px
-          padding-top 20px
-
-      .face_icon
-        width 100%
-        height 50px
-        line-height 50px
-        display flex
-        justify-content space-between
-        margin 40px 0
-        .face_two
-          .Icon_we{
-            width: 2em;
-            height: 2em;
-            vertical-align: -0.15em;
-            fill: currentColor;
-            overflow: hidden;
-          }
-
-        /*最底部*/
-    .footer_me
+      margin-bottom 20px
+      font-size 16px
+      font-weight bolder
+    p
+      margin 30px 0
+      text-indent 2em
+    .yinying
       width 100%
-      height 100px
-      line-height 50px
+      height 60px
+      line-height 60px
       text-align center
-      position fixed
-      bottom 0px
-      display flex
-      justify-content space-around
-      background-color #FFFFFF
-      .input
-        width: 10em;
-        height: 2em;
-        margin-top 1em
-        background-color #b1adaa
-        border none
-      .icon {
-        width: 2em;
-        height: 2em;
-        vertical-align: -0.15em;
-        fill: currentColor;
-        overflow: hidden;
-        margin-top 1em
-      }
+    .marst
+      margin 30px 0
+      font-size 16px
+      font-weight bold
+      text-align center
+/* 点赞微信区 */
+.face
+  width 100%
+  .face_dada
+    height 100px
+    display flex
+    justify-content space-around
+    background-color #cecece
+    .face_data_da
+      width 70%
+      height 100px
+      padding-top 20px
+  .face_icon
+    width 100%
+    height 50px
+    line-height 50px
+    display flex
+    justify-content space-between
+    margin 40px 0
+    .face_two
+      .Icon_we
+        width 2em
+        height 2em
+        vertical-align -0.15em
+        fill currentColor
+        overflow hidden
+    /* 最底部 */
+.footer_me
+  width 100%
+  height 100px
+  line-height 50px
+  text-align center
+  position fixed
+  bottom 0px
+  display flex
+  justify-content space-around
+  background-color #FFFFFF
+  .input
+    width 10em
+    height 2em
+    margin-top 1em
+    background-color #b1adaa
+    border none
+  .icon
+    width 2em
+    height 2em
+    vertical-align -0.15em
+    fill currentColor
+    overflow hidden
+    margin-top 1em
 </style>
